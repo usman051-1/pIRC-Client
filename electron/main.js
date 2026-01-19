@@ -9,7 +9,7 @@ function createWindow() {
     height: 768,
     minWidth: 800,
     minHeight: 600,
-    icon: path.join(__dirname, 'icon.ico'),
+    icon: path.join(__dirname, 'assets/icon.png'),
     title: 'pIRC - pwedIRC',
     backgroundColor: '#808080',
     webPreferences: {

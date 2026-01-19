@@ -2,7 +2,19 @@
 
 This guide explains how to build the pIRC Windows installer application.
 
-## Prerequisites
+## Automated Builds (Recommended)
+
+The easiest way to build installers is via GitHub Actions:
+
+1. Push your code to GitHub
+2. Create a new tag: `git tag v1.0.0 && git push origin v1.0.0`
+3. GitHub Actions will automatically build:
+   - Windows `.exe` installer
+   - Linux `.AppImage`
+   - macOS `.dmg`
+4. Download from the Releases page or Actions artifacts
+
+## Manual Build Prerequisites
 
 1. **Node.js 20+** installed on your system
 2. **Windows** for building the Windows installer (or use a CI/CD pipeline)
@@ -50,7 +62,12 @@ To run the Electron app in development mode:
 
 ### App Icon
 
-Replace `electron/assets/icon.ico` with your custom 256x256 ICO file.
+The app includes a custom retro-style icon at `electron/assets/icon.png`.
+
+To use a different icon:
+1. Replace `electron/assets/icon.png` with your 256x256 PNG
+2. For Windows, also provide `electron/assets/icon.ico` (ICO format)
+3. For macOS, provide `electron/assets/icon.icns` (ICNS format)
 
 ### App Metadata
 
