@@ -1,5 +1,6 @@
 {
   "name": "rest-express",
+  "main": "electron/main.js",
   "version": "1.0.0",
   "type": "module",
   "license": "MIT",
