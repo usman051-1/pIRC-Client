@@ -17,23 +17,23 @@
         "arch": ["x64"]
       }
     ],
-    "icon": "electron/assets/icon.png",
+    "icon": "electron/assets/icon.ico",
     "artifactName": "${productName}-Setup-${version}.${ext}"
   },
   "nsis": {
     "oneClick": false,
     "perMachine": true,
     "allowToChangeInstallationDirectory": true,
-    "installerIcon": "electron/assets/icon.png",
-    "uninstallerIcon": "electron/assets/icon.png",
-    "installerHeaderIcon": "electron/assets/icon.png",
+    "installerIcon": "electron/assets/icon.ico",
+    "uninstallerIcon": "electron/assets/icon.ico",
+    "installerHeaderIcon": "electron/assets/icon.ico",
     "createDesktopShortcut": true,
     "createStartMenuShortcut": true,
     "shortcutName": "pIRC"
   },
   "mac": {
     "target": ["dmg"],
-    "icon": "electron/assets/icon.png"
+    "icon": "electron/assets/icon.ico"
   },
   "linux": {
     "target": ["AppImage", "deb"],
